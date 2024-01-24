@@ -1,0 +1,84 @@
+notes	group	b	se	p_value	N
+sr, drop smallest counties, 0	pool	-7.4858158	2.2982338	.00154165	2100
+sr, drop smallest counties, 5	pool	-7.2065477	2.3085564	.00238952	1995
+sr, drop smallest counties, 10	pool	-6.8834386	2.3032111	.00362186	1890
+sr, drop smallest counties, 15	pool	-6.8229854	2.3356676	.00447692	1785
+sr, drop smallest counties, 20	pool	-7.0650985	2.3643189	.00373786	1680
+sr, drop smallest counties, 25	pool	-7.2402931	2.3949084	.00343551	1575
+sr, drop smallest counties, 30	pool	-7.0737948	2.4559374	.00528873	1470
+sr, drop smallest counties, 35	pool	-7.1523735	2.5195103	.00606179	1365
+sr, drop smallest counties, 40	pool	-6.6368786	2.6727392	.01588383	1260
+sr, drop smallest counties, 45	pool	-6.5919722	2.7309063	.01920614	1155
+sr, drop smallest counties, 50	pool	-7.4693709	2.8203858	.01085269	1050
+sr, timing of death, Include only deaths in first 24 hours	pool	-8.8576256	4.626788	.05845357	2100
+sr, timing of death, Exclude deaths in first 24 hours	pool	-6.0670699	2.1183098	.005106	2100
+sr, timing of death, Exclude deaths in first week	pool	-8.2491363	2.399541	.00085916	2100
+sr, timing of death, Exclude deaths in first month	pool	-9.5833657	2.7887242	.00086293	2100
+sr, timing of death, Include only deaths in first 24 hours	black	-16.45284	5.0661169	.00161937	1974
+sr, timing of death, Include only deaths in first 24 hours	white	-6.0586382	5.9415428	.31051237	1974
+sr, timing of death, Include only deaths in first 24 hours	int	-11.064564	7.0435282	.11960585	3948
+sr, timing of death, Exclude deaths in first 24 hours	black	-12.063718	3.2939224	.00041292	1995
+sr, timing of death, Exclude deaths in first 24 hours	white	-3.1418185	2.9135306	.28363506	1995
+sr, timing of death, Exclude deaths in first 24 hours	int	-9.211302	4.4109567	.03947654	3990
+sr, timing of death, Exclude deaths in first week	black	-14.533506	3.6753607	.0001487	1995
+sr, timing of death, Exclude deaths in first week	white	-4.6240312	3.3266785	.16781655	1995
+sr, timing of death, Exclude deaths in first week	int	-10.389908	5.0420982	.04210096	3990
+sr, timing of death, Exclude deaths in first month	black	-16.349052	3.8499944	.000051	1995
+sr, timing of death, Exclude deaths in first month	white	-5.3030105	3.5988461	.14394891	1995
+sr, timing of death, Exclude deaths in first month	int	-11.664617	5.1589471	.02606261	3990
+sr, start year, 1917	pool	-7.3653689	2.2910022	.00176243	2600
+sr, start year, 1918	pool	-7.2431456	2.3402023	.00255847	2500
+sr, start year, 1919	pool	-7.5672201	2.4197557	.002317	2400
+sr, start year, 1920	pool	-7.3050691	2.3849267	.00282231	2300
+sr, start year, 1921	pool	-7.6128376	2.4061479	.00206786	2200
+sr, start year, 1922	pool	-7.8096639	2.3788421	.00142011	2100
+sr, start year, 1923	pool	-7.9027436	2.2924953	.00083286	2000
+sr, start year, 1924	pool	-7.5534411	2.3385416	.00168058	1900
+sr, start year, 1925	pool	-6.932607	2.4028086	.00480098	1800
+sr, start year, 1926	pool	-5.7659853	2.5626004	.02665892	1700
+sr, end year, 1936	pool	-7.1100781	2.4965252	.00535088	1500
+sr, end year, 1937	pool	-7.651988	2.3118731	.00130285	1600
+sr, end year, 1938	pool	-7.7478889	2.297825	.0010663	1700
+sr, end year, 1939	pool	-7.6979708	2.2639777	.00097206	1800
+sr, end year, 1940	pool	-8.2206948	2.2580674	.00043473	1900
+sr, end year, 1941	pool	-8.1426158	2.30846	.0006381	2000
+sr, end year, 1942	pool	-7.8096639	2.3788421	.00142011	2100
+sr, end year, 1943	pool	-7.745669	2.528942	.00282408	2200
+sr, end year, 1944	pool	-7.8650543	2.6487298	.00374371	2300
+sr, end year, 1945	pool	-7.8967318	2.7930042	.00568054	2400
+sr, end year, 1946	pool	-7.9395337	2.8049988	.00562881	2500
+sr, end year, 1947	pool	-7.9853496	2.8488774	.00609272	2600
+sr, end year, 1948	pool	-7.7882504	2.885108	.00816836	2700
+sr, end year, 1949	pool	-7.7596717	2.905562	.00885149	2800
+sr, end year, 1950	pool	-7.7422787	2.9286892	.00953834	2900
+sr, end year, 1951	pool	-7.7108513	2.9926181	.01145283	3000
+sr, end year, 1952	pool	-7.6766811	3.0710038	.01407266	3100
+sr, end year, 1953	pool	-7.4361258	3.1636413	.0207316	3200
+sr, end year, 1954	pool	-7.2671088	3.2393455	.02710022	3300
+sr, end year, 1955	pool	-7.0720062	3.2875793	.03389939	3400
+sr, end year, 1956	pool	-6.8396614	3.2893433	.04017076	3500
+sr, end year, 1957	pool	-6.5156564	3.2650588	.04872826	3600
+sr, end year, 1958	pool	-6.5356919	3.3025756	.05059739	3700
+sr, end year, 1959	pool	-6.9323489	3.2661926	.03629431	3800
+sr, end year, 1960	pool	-6.8732564	3.2134317	.03490226	3900
+sr, end year, 1961	pool	-6.8878586	3.147958	.03101915	4000
+sr, end year, 1962	pool	-6.657699	3.0963895	.03397889	4099
+sr, stillborn, Add stillbirths− 1932+	pool	-6.4086212	2.1260798	.00327168	2100
+sr, stillborn, Add stillbirths and unnamed− 1932+	pool	-8.0647081	2.3626073	.00093068	2100
+sr, stillborn, Add unnamed− all years	pool	-7.2428617	2.1167831	.00090609	2100
+sr, stillborn, Add stillbirths and unnamed− all years	pool	-6.4107879	1.9816351	.00165359	2100
+sr, stillborn, Include only unnamed− all years	pool	-18.76351	6.4454218	.00444914	2100
+sr, stillborn, Include only unnamed− 1926−1932	pool	-15.523554	6.9337397	.02740485	1100
+sr, stillborn, Include only stillbirths− 1926−1932	pool	-1.2869473	8.5538192	.88071339	1100
+sr, clean control, Add southern counties	pool	-10.254048	2.0765589	1.451e-06	3801
+sr, clean control, Add S. counties + drop untreated NC	pool	-9.5359854	2.2016328	.00002364	2813
+sr, clean control, Add S. counties w/hosp + drop untreat	pool	-9.5588727	2.2032849	.00002306	2797
+sr, clean control, Add southern counties	black	-11.595209	2.7843494	.00004397	3462
+sr, clean control, Add southern counties	white	-10.5503	2.5523212	.00004984	3476
+sr, clean control, Add southern counties	int	-1.1681523	3.5235198	.74054223	6938
+sr, clean control, Add S. counties + drop untreated NC	black	-8.5295361	2.687219	.00176196	2531
+sr, clean control, Add S. counties + drop untreated NC	white	-10.967925	2.7156141	.00007879	2545
+sr, clean control, Add S. counties + drop untreated NC	int	2.7387757	3.5195693	.43747624	5076
+sr, clean control, Add S. counties w/hosp + drop untreat	black	-8.5563432	2.6843021	.00168913	2522
+sr, clean control, Add S. counties w/hosp + drop untreat	white	-11.001935	2.7213101	.00007786	2533
+sr, clean control, Add S. counties w/hosp + drop untreat	int	2.7479156	3.5263838	.43684769	5055

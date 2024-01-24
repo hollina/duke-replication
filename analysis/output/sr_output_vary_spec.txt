@@ -1,0 +1,43 @@
+notes	group	b	se	p_value	N
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Nweights	pool	-6.1174361	2.3378066	.01026827	2100
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Yweights	pool	-6.0505136	2.5623276	.02016753	2100
+sr, poisson, death_count, Ycounty, Yyear, Ycontrols, Yweights	pool	-6.5137992	2.4682328	.00965846	2100
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Nweights	pool	-8.0879104	2.5062353	.00169586	2100
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	pool	-8.108469	2.3565292	.00085056	2100
+sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights	pool	-7.4858158	2.2982338	.00154165	2100
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Nweights	black	-9.2950636	3.5162478	.00961537	1995
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Nweights	white	-4.441903	2.9420887	.13445408	1995
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Nweights	int	-5.078754	4.442627	.25586407	3990
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Yweights	black	-8.4991288	3.5424862	.01840374	1995
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Yweights	white	-4.250045	3.7281855	.25719237	1995
+sr, poisson, death_count, Ycounty, Yyear, Ncontrols, Yweights	int	-4.4376874	5.3067801	.40514638	3990
+sr, poisson, death_count, Ycounty, Yyear, Ycontrols, Yweights	black	-11.366723	3.2896013	.00082647	1995
+sr, poisson, death_count, Ycounty, Yyear, Ycontrols, Yweights	white	-4.1411307	3.0195457	.17350226	1995
+sr, poisson, death_count, Ycounty, Yyear, Ycontrols, Yweights	int	-7.5377401	4.3848043	.08889507	3990
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Nweights	black	-7.9713445	7.5867665	.2960944	1995
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Nweights	white	-8.0023383	3.4865493	.02394559	1995
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Nweights	int	.03368981	9.3835184	.99714296	3990
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	black	-12.153157	3.4576123	.00067878	1995
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	white	-5.9539799	2.9753677	.04826634	1995
+sr, poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	int	-6.5916425	4.3789738	.13560148	3990
+sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights	black	-13.61007	3.1901779	.00004737	1995
+sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights	white	-4.7115906	2.9301036	.11119018	1995
+sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights	int	-9.3384704	4.1595573	.02710845	3990
+sr, mundlak poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	pool	-7.5135582	1.880241	.00006441	2100
+sr, ols, death_rate, Ycounty, Yyear, Ncontrols, Yweights	pool	-10.042645	3.0992146	.00162616	2100
+sr, stacked poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	pool	-9.300391	2.3965064	.00019319	6643
+sr, mundlak poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	black	-15.106091	3.8704678	.00009504	1995
+sr, ols, death_rate, Ycounty, Yyear, Ncontrols, Yweights	black	-19.294549	5.2863249	.00043093	1995
+sr, stacked poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	black	-14.444945	3.1248494	.00001276	6266
+sr, mundlak poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	white	-5.3755106	1.8729723	.00410416	1995
+sr, ols, death_rate, Ycounty, Yyear, Ncontrols, Yweights	white	-6.977622	3.6140641	.05653556	1995
+sr, stacked poisson, death_rate, Ycounty, Yyear, Ncontrols, Yweights	white	-6.5210423	3.221033	.04591427	6266
+sr, mundlak, ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	pool	-12.504983	3.5244006	.000388	2100
+sr, Callaway and Sant'Anna (2020), ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	pool	-13.044742	4.4647199	.00348084	2100
+sr, stacked, ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	pool	-9.7310144	3.1880931	.00295266	6643
+sr, mundlak, ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	black	-18.094521	4.9867601	.00028506	1926
+sr, Callaway and Sant'Anna (2020), ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	black	-18.858057	6.1009106	.00199468	1908
+sr, stacked, ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	black	-17.310462	4.3031148	.0001162	6127
+sr, mundlak, ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	white	-10.464856	3.7318483	.00504413	2096
+sr, Callaway and Sant'Anna (2020), ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	white	-10.554165	4.8752704	.03040019	2095
+sr, stacked, ln_death_rate, Ycounty, Yyear, Ncontrols, Yweights	white	-6.0245368	3.7939737	.11566198	6622
