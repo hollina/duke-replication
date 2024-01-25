@@ -610,9 +610,9 @@ The provided code reproduces:
 | Figure L2a        | analysis/scripts/code/6.10_online_appendix_l_extended_panel.do      | 872                            | figure_l2a_imr_bailey_treated_vs_bailey_south_1962.pdf                     ||
 | Figure L2b        | analysis/scripts/code/6.10_online_appendix_l_extended_panel.do      | 872                             | figure_l2b_pooled_other_southern_states_event_study_bailey.pdf                     ||
 | Table M1          | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 444-460                             | table_m1_imr_poisson_clean_cntrls_psm.tex                ||
-| Table M2          | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 981-1004                             | table_m2_combined_mortality_poisson_clean_controls_psm_900.tex                ||
-| Table M3          | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 981-1004                             | table_m3_combined_mortality_poisson_clean_controls_psm_750.tex                ||
-| Table M4          | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 981-1004                             | table_m4_combined_mortality_poisson_clean_controls_psm_500.tex                ||
+| Table M2          | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 946-969                             | table_m2_combined_mortality_poisson_clean_controls_psm_900.tex                ||
+| Table M3          | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 946-969                             | table_m3_combined_mortality_poisson_clean_controls_psm_750.tex                ||
+| Table M4          | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 946-969                             | table_m4_combined_mortality_poisson_clean_controls_psm_500.tex                ||
 | Figure M1a1       | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 384-414                             | figure_m1a1_psm_top100pct_fake_treat_clean_cntrls_pooled_by_treatment_over_time.pdf                     ||
 | Figure M1a2       | analysis/scripts/code/6.11_online_appendix_m_psm.do                 |  384-414                              | figure_m1a2_psm_top100pct_fake_treat_clean_cntrls_black_by_treatment_over_time.pdf                     ||
 | Figure M1a3       | analysis/scripts/code/6.11_online_appendix_m_psm.do                 |  384-414                              | figure_m1a3_psm_top100pct_fake_treat_clean_cntrls_white_by_treatment_over_time.pdf                     ||
@@ -622,8 +622,8 @@ The provided code reproduces:
 | Figure M1c1       | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 384-414                              | figure_m1c1_psm_top500pct_fake_treat_clean_cntrls_pooled_by_treatment_over_time.pdf                     ||
 | Figure M1c2       | analysis/scripts/code/6.11_online_appendix_m_psm.do                 |  384-414                             | figure_m1c2_psm_top500pct_fake_treat_clean_cntrls_black_by_treatment_over_time.pdf                     ||
 | Figure M1c3       | analysis/scripts/code/6.11_online_appendix_m_psm.do                 | 384-414                              | figure_m1c3_psm_top500pct_fake_treat_clean_cntrls_white_by_treatment_over_time.pdf                     ||
-| Table N1          | analysis/scripts/code/6.12_online_appendix_n_summary_stats.do       | 78-262                             | table_n1_summary_treatment_mortality.tex                ||
-| Table N2          | analysis/scripts/code/6.12_online_appendix_n_summary_stats.do       | 290-412                             | table_n2_summary_first_stage.tex                ||
+| Table N1          | analysis/scripts/code/6.12_online_appendix_n_summary_stats.do       | 78-259                             | table_n1_summary_treatment_mortality.tex                ||
+| Table N2          | analysis/scripts/code/6.12_online_appendix_n_summary_stats.do       | 287-393                             | table_n2_summary_first_stage.tex                ||
 
 ## Data citations 
 
