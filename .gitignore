@@ -7,6 +7,8 @@ Rplots.pdf
 
 # Data
 analysis/processed
+analysis/libraries
+analysis/libraries.zip
 analysis/raw
 temp
 cannot-distribute
