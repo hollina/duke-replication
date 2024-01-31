@@ -39,6 +39,7 @@ set varabbrev off
 
 * Set custom install location for installing Stata packages
 local install_packages 0
+local install_gtools 0 //  The stata package gtools installs differently depending on your machine. The version in our libraries may not work for your machine. 
 
 * Switch log on/off
 local log 1
@@ -173,7 +174,11 @@ if `install_packages' {
 	// R
 	shell $R_PATH --vanilla <"$PROJ_PATH/analysis/scripts/code/_install_R_packages.R"	
 }
-
+if `install_gtools' {
+	shell rm -r "$PROJ_PATH/analysis/scripts/libraries/stata-18/g"
+	ssc install gtools
+	gtools, upgrade
+}
 // Build new list of libraries to be searched
 mata: mata mlib index
 
