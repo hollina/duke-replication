@@ -39,7 +39,7 @@ set varabbrev off
 
 * Set custom install location for installing Stata packages
 local install_packages 0
-local install_gtools 0 //  The stata package gtools installs differently depending on your machine. The version in our libraries may not work for your machine. 
+local install_gtools 1 //  The stata package gtools installs differently depending on your machine. The version in our libraries may not work for your machine. 
 
 * Switch log on/off
 local log 1
