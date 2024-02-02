@@ -37,9 +37,22 @@ set varabbrev off
 *****************************************************
 // Local switches
 
-* Set custom install location for installing Stata packages
+* Install Stata packages (should not be needed, all used are in library.zip)
 local install_packages 0
-local install_gtools 1 //  The stata package gtools installs differently depending on your machine. The version in our libraries may not work for your machine. 
+
+* Install gtools, The stata package gtools installs differently depending on your machine.
+*The version in our libraries may not work for your machine. 
+
+local machine = c(machine_type)
+local processors = c(processors)
+if  "`machine'" == "Mac (Apple Silicon)" &  "`processors'" == "10" {
+  // Skip install
+  local install_gtools 0
+}  
+else {
+  // Force install, because the version provided will not be compatible
+  local install_gtools 1
+}
 
 * Switch log on/off
 local log 1
@@ -52,9 +65,6 @@ local run_appendix		1
 local run_slow_code		1
 local run_spec_chart 	1
 local run_numbers		1
-
-
-
 
 *****************************************************
 
