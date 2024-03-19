@@ -292,7 +292,7 @@ save "$PROJ_PATH/analysis/processed/temp/iv_data_non_NC.dta", replace
 // Pooled 
 ******************************************************************************
 
-use "$PROJ_PATH/analysis/processed/temp/iv_data_non_nc.dta", clear
+use "$PROJ_PATH/analysis/processed/temp/iv_data_non_NC.dta", clear
 
 // Blank regression for spacing in esttab 
 eststo blank: reg tot_pay_`treat_type'_adj births_pub

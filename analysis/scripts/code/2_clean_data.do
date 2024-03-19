@@ -4929,10 +4929,10 @@ if `amd_physicians' {
 
 	// Separate names
 	split name, p(",")
-	local n = "`r(k_new)'"
+	
 	gen last_name = name1
-	egen first_name = concat(name2-name`n')
-	drop name1-name`n'
+	egen first_name = concat(name2 name3 name4) 
+	drop name1 name2 name3 name4 
 	rename name raw_name 
 
 	replace last_name = "" if strpos(last_name, "?") > 0
@@ -5077,7 +5077,7 @@ if `amd_physicians' {
 	replace med_school = subinstr(med_school,";",",",.)
 	split med_school, parse(",") gen(ms_)
 
-	forvalues i = 1(1)`r(k_new)' {
+	forvalues i = 1/3 { 
 		replace ms_`i' = "" if regexm(ms_`i',"\?")
 		replace ms_`i' = regexr(ms_`i',"calif","cal")
 		replace ms_`i' = regexr(ms_`i',"teen","tenn")
@@ -5104,7 +5104,7 @@ if `amd_physicians' {
 
 	split grad_year, parse(";") gen(gyr)
 
-	forvalues k = 1(1)`r(k_new)' {
+	forvalues k = 1/3 { 
 		replace gyr`k' = "" if strpos(gyr`k', "(??)") | regexm(gyr`k',"\?")
 		destring gyr`k', replace 
 		
@@ -5141,7 +5141,7 @@ if `amd_physicians' {
 	
 	split license_year, parse(";") gen(lyr)
 
-	forvalues k = 1(1)`r(k_new)' {
+	forvalues k = 1/2 { 
 		replace lyr`k' = "" if regexm(lyr`k',"\?") 
 		destring lyr`k', replace 
 		
