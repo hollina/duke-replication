@@ -35,7 +35,7 @@ shift_axis_x <- function(p, x=0){
 # Create single data.table with all results
 
 # Read in file
-regression_results = fread("analysis/output/sr_output_vary_spec.txt")
+regression_results = fread("analysis/output/sr_output_vary_spec.txt", encoding = 'UTF-8')
 
 # Create binary for each item in notes list. 
 regression_results[,poisson := grepl("poisson", notes)]
@@ -123,9 +123,11 @@ coef_plot = ggplot(data = regression_results
 coef_plot = shift_axis_x(coef_plot, 0) 
 coef_plot
 
-dot_plot  = ggplot(data = regression_results
-                   , aes(y = 1, x = order, shape = as.factor(countyFE))) +
-  geom_point(size = bigger_dp_size) + 
+dot_plot  = ggplot(data = subset(regression_results, 
+                                 notes != "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights")
+                   , aes(y = 1, x = order, fill = as.factor(countyFE))) +
+  geom_point(size = bigger_dp_size, 
+             shape = 21) +
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
              color = 'black', 
@@ -140,37 +142,41 @@ dot_plot  = ggplot(data = regression_results
            label= 'County FE', 
            size = base_text_size, 
            hjust = 1) + 
-  geom_point(data = regression_results
-             , aes(y = 0, x = order, shape = as.factor(yearFE)), 
-             size = bigger_dp_size)  +
+  geom_point(data = subset(regression_results, 
+                           notes != "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights")
+             , aes(y = 0, x = order, fill = as.factor(yearFE)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = 0, x = order, shape = as.factor(yearFE)),
+             aes(y = 0, x = order, fill = as.factor(yearFE)),
              color = "black", 
              size = bigger_dp_size, 
              shape = 15) + 
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = 0, x = order, shape = as.factor(yearFE)),
+             aes(y = 0, x = order, fill = as.factor(yearFE)),
              color = highlight_color, 
              size = base_dp_size, 
-             shape = 15) + 
+             shape = 15) +
   annotate("text", x = .5, y = 0, 
            label='Year FE', 
            size = base_text_size, 
            hjust = 1) + 
-  geom_point(data = regression_results
-             , aes(y = -1, x = order, shape = as.factor(controls)), 
-             size = bigger_dp_size)  +
+  geom_point(data = subset(regression_results, 
+                           notes != "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights")
+             , aes(y = -1, x = order, fill = as.factor(controls)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -1, x = order, shape = as.factor(controls)),
+             aes(y = -1, x = order, fill = as.factor(controls)),
              color = "black", 
              size = bigger_dp_size, 
              shape = 15) + 
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -1, x = order, shape = as.factor(controls)),
+             aes(y = -1, x = order, fill = as.factor(controls)),
              color = highlight_color, 
              size = base_dp_size, 
              shape = 15) + 
@@ -178,18 +184,20 @@ dot_plot  = ggplot(data = regression_results
            label='Controls', 
            size = base_text_size, 
            hjust = 1) + 
-  geom_point(data = regression_results
-             , aes(y = -2, x = order, shape = as.factor(weights)), 
-             size = bigger_dp_size)  +
+  geom_point(data = subset(regression_results, 
+                           notes != "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights")
+             , aes(y = -2, x = order, fill = as.factor(weights)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -2, x = order, shape = as.factor(weights)),
+             aes(y = -2, x = order, fill = as.factor(weights)),
              color = "black", 
              size = bigger_dp_size, 
              shape = 15) + 
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -2, x = order, shape = as.factor(weights)),
+             aes(y = -2, x = order, fill = as.factor(weights)),
              color = highlight_color, 
              size = base_dp_size, 
              shape = 15) + 
@@ -197,18 +205,20 @@ dot_plot  = ggplot(data = regression_results
            label='Weights', 
            size = base_text_size, 
            hjust = 1) + 
-  geom_point(data = regression_results
-             , aes(y = -5, x = order, shape = as.factor(death_rate)), 
-             size = bigger_dp_size)  +
+  geom_point(data = subset(regression_results, 
+                           notes != "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights")
+             , aes(y = -5, x = order, fill = as.factor(death_rate)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -5, x = order, shape = as.factor(death_rate)),
+             aes(y = -5, x = order, fill = as.factor(death_rate)),
              color = "black", 
              size = bigger_dp_size, 
              shape = 15) + 
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -5, x = order, shape = as.factor(death_rate)),
+             aes(y = -5, x = order, fill = as.factor(death_rate)),
              color = highlight_color, 
              size = base_dp_size, 
              shape = 15) + 
@@ -217,31 +227,35 @@ dot_plot  = ggplot(data = regression_results
            size = base_text_size, 
            hjust = 1) +  
   geom_point(data = regression_results
-             , aes(y = -6, x = order, shape = as.factor(death_count)), 
-             size = bigger_dp_size)  +
+             , aes(y = -6, x = order, fill = as.factor(death_count)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   annotate("text", x = .5, y = -6, 
            label='Death count', 
            size = base_text_size, 
            hjust = 1) + 
   geom_point(data = regression_results
-             , aes(y = -7, x = order, shape = as.factor(ln_death_rate)), 
-             size = bigger_dp_size)  +
+             , aes(y = -7, x = order, fill = as.factor(ln_death_rate)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   annotate("text", x = .5, y = -7, 
            label='ln(Death rate)', 
            size = base_text_size, 
            hjust = 1) + 
-  geom_point(data = regression_results
-             , aes(y = -10, x = order, shape = as.factor(poisson)), 
-             size = bigger_dp_size)  +
+  geom_point(data = subset(regression_results, 
+                           notes != "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights")
+             , aes(y = -10, x = order, fill = as.factor(poisson)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -10, x = order, shape = as.factor(poisson)),
+             aes(y = -10, x = order, fill = as.factor(poisson)),
              color = "black", 
              size = bigger_dp_size, 
              shape = 15) + 
   geom_point(data = subset(regression_results, 
                            notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"), 
-             aes(y = -10, x = order, shape = as.factor(poisson)),
+             aes(y = -10, x = order, fill = as.factor(poisson)),
              color = highlight_color, 
              size = base_dp_size, 
              shape = 15) + 
@@ -250,29 +264,33 @@ dot_plot  = ggplot(data = regression_results
            size = base_text_size, 
            hjust = 1) + 
   geom_point(data = regression_results
-             , aes(y = -11, x = order, shape = as.factor(stacked)), 
-             size = bigger_dp_size)  +
+             , aes(y = -11, x = order, fill = as.factor(stacked)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   annotate("text", x = .5, y = -11, 
            label='Stacked-Poisson', 
            size = base_text_size, 
            hjust = 1) +
   geom_point(data = regression_results
-             , aes(y = -12, x = order, shape = as.factor(ols)), 
-             size = bigger_dp_size)  +
+             , aes(y = -12, x = order, fill = as.factor(ols)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   annotate("text", x = .5, y = -12, 
            label='TWFE (OLS)', 
            size = base_text_size, 
            hjust = 1) +
   geom_point(data = regression_results
-             , aes(y = -13, x = order, shape = as.factor(CS)), 
-             size = bigger_dp_size)  +
+             , aes(y = -13, x = order, fill = as.factor(CS)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   annotate("text", x = .5, y = -13, 
            label='Callaway and Sant\'Anna', 
            size = base_text_size*.9, 
            hjust = 1) + 
   geom_point(data = regression_results
-             , aes(y = -14, x = order, shape = as.factor(mundlak)), 
-             size = bigger_dp_size)  +
+             , aes(y = -14, x = order, fill = as.factor(mundlak)), 
+             size = bigger_dp_size, 
+             shape = 21)  +
   annotate("text", x = .5, y = -14, 
            label='eTWFE-Poisson', 
            size = base_text_size, 
@@ -282,7 +300,7 @@ dot_plot  = ggplot(data = regression_results
         axis.ticks = element_blank(),
         axis.line = element_blank(), 
         legend.position="none")  +
-  scale_shape_manual(values = c(21,16)) +
+  scale_fill_manual(values=c("TRUE"="black", "FALSE"="white")) +
   labs(x = "", 
        y = "") + 
   xlim(-3.5, 12) 

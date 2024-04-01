@@ -810,7 +810,7 @@ imdata, mort(mort_excl_nonam) suffix(pub)
 imppml, y_stub(imr_) suffix(pub) t(treated) controls(`baseline_controls') wgt(births) a(fips year) column(1) pooled  ///
 		store ///
 		store_filename("$PROJ_PATH/analysis/output/sr_output_vary_samp.txt") ///
-		store_options("sr, stillborn, Add stillbirths− 1932+")
+		store_options("sr, stillborn, Add stillbirths- 1932+")
 
 
 // Column 2 - Add back infant deaths with no names only after 1932
@@ -826,7 +826,7 @@ imdata, mort(mort) suffix(pub)
 imppml, y_stub(imr_) suffix(pub) t(treated) controls(`baseline_controls') wgt(births) a(fips year) column(2) pooled  ///
 		store ///
 		store_filename("$PROJ_PATH/analysis/output/sr_output_vary_samp.txt") ///
-		store_options("sr, stillborn, Add stillbirths and unnamed− 1932+")
+		store_options("sr, stillborn, Add stillbirths and unnamed- 1932+")
 
 
 // Column 3 - Add back infant deaths with no names all years
@@ -841,7 +841,7 @@ imdata, mort(mort_excl_still) suffix(pub)
 imppml, y_stub(imr_) suffix(pub) t(treated) controls(`baseline_controls') wgt(births) a(fips year) column(3) pooled  ///
 		store ///
 		store_filename("$PROJ_PATH/analysis/output/sr_output_vary_samp.txt") ///
-		store_options("sr, stillborn, Add unnamed− all years")
+		store_options("sr, stillborn, Add unnamed- all years")
 
 
 // Column 4 - Add back infant deaths with no names + still borns
@@ -856,7 +856,7 @@ imdata, mort(mort_all) suffix(pub)
 imppml, y_stub(imr_) suffix(pub) t(treated) controls(`baseline_controls') wgt(births) a(fips year) column(4) pooled ///
 		store ///
 		store_filename("$PROJ_PATH/analysis/output/sr_output_vary_samp.txt") ///
-		store_options("sr, stillborn, Add stillbirths and unnamed− all years")
+		store_options("sr, stillborn, Add stillbirths and unnamed- all years")
 
 
 // Column 5 - Only no name deaths
@@ -870,7 +870,7 @@ imdata, mort(no_name) suffix(pub)
 imppml, y_stub(imr_) suffix(pub) t(treated) controls(`baseline_controls') wgt(births) a(fips year) column(5) pooled ///
 		store ///
 		store_filename("$PROJ_PATH/analysis/output/sr_output_vary_samp.txt") ///
-		store_options("sr, stillborn, Include only unnamed− all years")
+		store_options("sr, stillborn, Include only unnamed- all years")
 
 
 // Column 6 - Only no name deaths up to 1932
@@ -884,7 +884,7 @@ imdata, mort(no_name) suffix(pub)
 imppml, y_stub(imr_) suffix(pub) t(treated) controls(`baseline_controls') wgt(births) a(fips year) column(6) pooled  ///
 		store ///
 		store_filename("$PROJ_PATH/analysis/output/sr_output_vary_samp.txt") ///
-		store_options("sr, stillborn, Include only unnamed− 1926−1932")
+		store_options("sr, stillborn, Include only unnamed- 1926-1932")
 
 
 
@@ -901,7 +901,7 @@ imdata, mort(still) suffix(pub)
 imppml, y_stub(imr_) suffix(pub) t(treated) controls(`baseline_controls') wgt(births) a(fips year) column(7) pooled ///
 		store ///
 		store_filename("$PROJ_PATH/analysis/output/sr_output_vary_samp.txt") ///
-		store_options("sr, stillborn, Include only stillbirths− 1926−1932")
+		store_options("sr, stillborn, Include only stillbirths- 1926-1932")
 
 
 

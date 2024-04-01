@@ -20,13 +20,13 @@ bigger_point_size = 3.5
 # Read in file
 
 # Baseline
-baseline = fread("analysis/output/sr_output_vary_spec.txt")
+baseline = fread("analysis/output/sr_output_vary_spec.txt", encoding = 'UTF-8')
 baseline = baseline[group == "pool" & notes == "sr, poisson, death_rate, Ycounty, Yyear, Ycontrols, Yweights"] 
 baseline[, low := b - 1.96*se]
 baseline[, high := b + 1.96*se]
 
 # Vary sample
-regression_results = fread("analysis/output/sr_output_vary_samp.txt")
+regression_results = fread("analysis/output/sr_output_vary_samp.txt", encoding = 'UTF-8')
 
 # Shift axis function found on stack exchange
 shift_axis_x <- function(p, x=0){

@@ -79,7 +79,7 @@ local run_numbers		1
 	
 if `unzip_files' {
 	// Unzip raw data (Note this will not include some IPUMS and ICPSR data)
-	shell unzip "$PROJ_PATH/analysis/raw.zip" -d "$PROJ_PATH/analysis/"
+	*shell unzip "$PROJ_PATH/analysis/raw.zip" -d "$PROJ_PATH/analysis/"
 	shell rm -r "$PROJ_PATH/analysis/__MACOSX"
 
 // Unzip R and stata libraries 
