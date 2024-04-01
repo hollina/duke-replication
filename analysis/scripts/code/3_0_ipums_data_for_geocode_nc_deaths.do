@@ -52,6 +52,7 @@ if `places' {
 	save "$PROJ_PATH/analysis/processed/intermediate/nhgis/ipums_placenhg_codes_1940.dta", replace
 
 	// Run code in R to add 1940 counties to PLACENHG locations
+	cd "$PROJ_PATH"
 	shell $R_PATH --vanilla <"$PROJ_PATH/analysis/scripts/code/_placenhg_nhgis_overlay.R"
 	
 	// Load place points with added county 

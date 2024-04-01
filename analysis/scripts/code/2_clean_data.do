@@ -6037,6 +6037,7 @@ if `gnis' {
 	
 	
 	***** Run code in R to add 1920 counties *****
+	cd "$PROJ_PATH"
 	shell $R_PATH --vanilla <"$PROJ_PATH/analysis/scripts/code/_gnis_nhgis_overlay.R"	
 
 	

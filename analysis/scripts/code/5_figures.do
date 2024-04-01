@@ -70,7 +70,7 @@ twoway connected fraction_counties year, lw(1.0) col("230 65 115") msymbol(none)
 		legend(off) ///
 		xtitle("Year", size(5) height(7)) ///
 		ytitle("", size(5)) ///
-		subtitle("Share of counties ever having received capital appropriation from Duke Endowment", size(5) pos(11)) ///
+		subtitle("Share of counties ever having received capital appropriation from Duke Endowment", size(4) pos(11)) ///
 		xline(1927, lpattern(dash) lcolor(gs7) lwidth(1)) ///
 		xsize(8) ///
 		graphregion(fcolor(white) ifcolor(white) ilcolor(white) color(white)) plotregion(style(none) fcolor(white) ilcolor(white) ifcolor(white) color(white)) bgcolor(white)
@@ -183,6 +183,7 @@ replace duke_cat_label = "1927-1928" if duke_cat == 5
 save "$PROJ_PATH/analysis/processed/data/R/input/map_input.dta", replace
 
 // Run code to create maps in R
+cd "$PROJ_PATH"
 shell $R_PATH --vanilla <"$PROJ_PATH/analysis/scripts/code/5_maps.R"	
 
 
