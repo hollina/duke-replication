@@ -63,13 +63,13 @@ sr, end year, 1959	pool	-6.9323489	3.2661926	.03629431	3800
 sr, end year, 1960	pool	-6.8732564	3.2134317	.03490226	3900
 sr, end year, 1961	pool	-6.8878586	3.147958	.03101915	4000
 sr, end year, 1962	pool	-6.657699	3.0963895	.03397889	4099
-sr, stillborn, Add stillbirths− 1932+	pool	-6.4086212	2.1260798	.00327168	2100
-sr, stillborn, Add stillbirths and unnamed− 1932+	pool	-8.0647081	2.3626073	.00093068	2100
-sr, stillborn, Add unnamed− all years	pool	-7.2428617	2.1167831	.00090609	2100
-sr, stillborn, Add stillbirths and unnamed− all years	pool	-6.4107879	1.9816351	.00165359	2100
-sr, stillborn, Include only unnamed− all years	pool	-18.76351	6.4454218	.00444914	2100
-sr, stillborn, Include only unnamed− 1926−1932	pool	-15.523554	6.9337397	.02740485	1100
-sr, stillborn, Include only stillbirths− 1926−1932	pool	-1.2869473	8.5538192	.88071339	1100
+sr, stillborn, Add stillbirths- 1932+	pool	-6.4086212	2.1260798	.00327168	2100
+sr, stillborn, Add stillbirths and unnamed- 1932+	pool	-8.0647081	2.3626073	.00093068	2100
+sr, stillborn, Add unnamed- all years	pool	-7.2428617	2.1167831	.00090609	2100
+sr, stillborn, Add stillbirths and unnamed- all years	pool	-6.4107879	1.9816351	.00165359	2100
+sr, stillborn, Include only unnamed- all years	pool	-18.76351	6.4454218	.00444914	2100
+sr, stillborn, Include only unnamed- 1926-1932	pool	-15.523554	6.9337397	.02740485	1100
+sr, stillborn, Include only stillbirths- 1926-1932	pool	-1.2869473	8.5538192	.88071339	1100
 sr, clean control, Add southern counties	pool	-10.254048	2.0765589	1.451e-06	3801
 sr, clean control, Add S. counties + drop untreated NC	pool	-9.5359854	2.2016328	.00002364	2813
 sr, clean control, Add S. counties w/hosp + drop untreat	pool	-9.5588727	2.2032849	.00002306	2797
