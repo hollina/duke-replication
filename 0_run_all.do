@@ -53,6 +53,8 @@ else {
   // Force install, because the version provided will not be compatible
   local install_gtools 1
 }
+// Force removal of the gtools package that was installed. The AEA replicator needed this set to 0
+local remove_existing_gtools 0
 
 * Switch log on/off
 local log 1
@@ -185,7 +187,9 @@ if `install_packages' {
 	shell $R_PATH --vanilla <"$PROJ_PATH/analysis/scripts/code/_install_R_packages.R"	
 }
 if `install_gtools' {
-	shell rm -r "$PROJ_PATH/analysis/scripts/libraries/stata-18/g"
+	if `remove_existing_gtools' {
+		shell rm -r "$PROJ_PATH/analysis/scripts/libraries/stata-18/g"
+	}
 	ssc install gtools
 	gtools, upgrade
 }
