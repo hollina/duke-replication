@@ -5,7 +5,7 @@
 *   This script runs the code to generate the tables and figures for the paper:
 *		"The Gift of a Lifetime: The Hospital, Modern Medicine, and Mortality" 
 *	AUTHORS: Alex Hollingsworth, Krzysztof Karbownik, Melissa Thomasson, and Anthony Wray
-* 	VERSION: January 2024
+* 	VERSION: April 2024
 
 * DESCRIPTION
 * 	This script replicates the analysis in our paper and online appendix
