@@ -329,46 +329,46 @@ The following table provides a list of all datasets included in this replication
 | `nhgis/tables/nhgis0029_ds84_1950_county.dat` | Manson et al. (2019) | NHGIS County-level data (1950) | Yes |
 | `nhgis/tables/nhgis0029_ds91_1960_county.dat` | Manson et al. (2019) | NHGIS County-level data (1960) | Yes |
 | `numident/ferrie_crosswalk.dta`                     | Black et al. (2015) | NUMIDENT place of birth text string to GNIS Feature ID crosswalk | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH01_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH02_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH03_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH04_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH05_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH06_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH07_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH08_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH09_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH01-10_PU/NUMDEATH10_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH11_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH12_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH13_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH14_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH15_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH16_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH17_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH18_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH19_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/death/NUMDEATH11-20_PU/NUMDEATH20_PU.txt` | SSA (2007) | NUMIDENT Death Files | Yes |
-| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_01_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_02_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_03_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_04_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_05_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_06_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_07_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_08_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_09_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_10_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_11_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_12_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_13_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_14_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_15_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_16_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_17_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_18_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_19_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
-| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_20_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | Yes |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH01_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH02_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH03_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH04_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH05_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH06_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH07_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH08_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH09_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH01-10_PU/NUMDEATH10_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH11_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH12_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH13_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH14_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH15_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH16_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH17_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH18_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH19_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/death/NUMDEATH11-20_PU/NUMDEATH20_PU.txt` | SSA (2007) | NUMIDENT Death Files | No |
+| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_01_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_02_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_03_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_04_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_01-05_PU/NUMSS5_05_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_06_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_07_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_08_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_09_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_06-10_PU/NUMSS5_10_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_11_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_12_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_13_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_14_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_11-15_PU/NUMSS5_15_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_16_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_17_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_18_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_19_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
+| `numident/ss5/NUMSS5_16-20_PU/NUMSS5_20_PU.txt`     | SSA (2007) | NUMIDENT Application (SS-5) Files | No |
 | `pvf/bdct2140.xls`                          | Fishback, Haines, and Kantor (2007) | City-level data, 1921-1940| Yes |
 | `seer/al.1969_2020.singleages.adjusted.txt` | SEER (2022) | Single year of age population estimates | Yes |
 | `seer/ar.1969_2020.singleages.txt`          | SEER (2022) | Single year of age population estimates | Yes |
@@ -484,13 +484,14 @@ The code is licensed under a MIT license. See [LICENSE.txt](LICENSE.txt) for det
 To perform a clean run
 
 1.  Be sure to have downloaded the publicly available IPUMS and ICPSR data that we are not allowed to redistribute
-2. Delete the following two directories:
+2. Be sure to download the NUMIDENT data from https://doi.org/10.3886/E207202V1.
+3. Delete the following two directories:
   
   - `/processed`
   - `/output`
 
-3. Open the stata project `duke-replication.stpr` or make the working directory of Stata is the same directory `duke-replication.stpr` is located in
-4. Run this file, `0_run_all.do`
+4. Open the stata project `duke-replication.stpr` or make the working directory of Stata is the same directory `duke-replication.stpr` is located in
+5. Run this file, `0_run_all.do`
 
 
 
