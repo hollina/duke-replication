@@ -18,6 +18,8 @@ Hollingsworth, Alex, Krzysztof Karbownik, Melissa A. Thomasson, and Anthony Wray
 
 Some public-use datasets from IPUMS USA cannot be included in the repository. These must first be downloaded using the IPUMS data extraction system before running our code. Instructions for accessing data from IPUMS USA are provided below. 
 
+In addition the NUMIDENT data must be downloaded from https://doi.org/10.3886/E207202V1. Instructions for where to place the data are provided below. 
+
 The code is executed using Stata version 18 and R version 4.3.1. To recreate our paper, navigate to the home directory `duke-replication` and open the stata project `duke-replication.stpr`, then run the do file `0_run_all.do`. This will run all of the code to create the figures and tables in the manuscript, including the online appendix. The replicator should expect the code to run for about 2 hours.
 
 ## Data Availability and Provenance Statements
@@ -120,7 +122,12 @@ The paper also uses other data from __IPUMS USA__. In such cases, IPUMS USA does
 
 The North Carolina death certificate data used in this paper were obtained from Cook et al. (2014; 2016) via a request to the authors. A copy of the data file is provided as part of this archive. Please contact John Parman for more information about the data in Cook et al. (2014; 2016). 
 
-The paper uses data from the public-use __NUMIDENT__ Application (SS-5) and Death Files (SSA 2007). The data were purchased from the Electronic Records Division of the National Archives and Records Administration (NARA). Further information about the data files included in the  Public-Use NUMIDENT can be found [here](https://aad.archives.gov/aad/series-description.jsp?s=5057) or by contacting the Electronic Records Division at [cer@nara.gov](cer@nara.gov). There are no access or use restrictions on the Public Use NUMIDENT data files. As such, we have posted the data to a separate repository where interested users can access the data with no restrictions on redistribution. 
+The paper uses data from the public-use __NUMIDENT__ Application (SS-5) and Death Files (SSA 2007). The data were purchased from the Electronic Records Division of the National Archives and Records Administration (NARA). Further information about the data files included in the  Public-Use NUMIDENT can be found [here](https://aad.archives.gov/aad/series-description.jsp?s=5057) or by contacting the Electronic Records Division at [cer@nara.gov](cer@nara.gov). There are no access or use restrictions on the Public Use NUMIDENT data files. As such, we have posted the data to a separate repository where interested users can access the data with no restrictions on redistribution beyond attribution to this paper. This repository can be found here: https://doi.org/10.3886/E207202V1. To place this data in the appropriate spot for the project follow these steps: 
+  1. Navigate to https://doi.org/10.3886/E207202V1
+  2. Download the `numident/death` directory and all of its contents
+  3. Copy the contents of this directory  (two files, ` NUMDEATH01-10_PU.zip` and `NUMDEATH11-20_PU.zip`) into the `analysis/raw/numident/death` directory of this project
+  4. Download the `numident/ss5` directory and all of its contents
+  5.  Copy the contents of this directory  (four files, `NUMSS5_01-05_PU.zip`, `NUMSS5_06-10_PU.zip`, `NUMSS5_11-15_PU.zip`, and `NUMSS5_16-20_PU.zip`) into the `analysis/raw/numident/ss5` directory of this project
 
 Single year of age population estimates by county were downloaded from the National Cancer Institute's Surveillance, Epidemiology, and End Results (SEER) Program (SEER, 2022). Data can be downloaded from [here](https://seer.cancer.gov/popdata/download.html), under "County-Level Population Files - Single-year Age Groups." A copy of the data files are provided as part of this archive. The data are in the public domain.
 
